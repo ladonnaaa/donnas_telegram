@@ -1,6 +1,6 @@
 
 
-```markdown
+
 # 📜 Donna's Telegram System for RedM
 
 An advanced, fully immersive Telegram and Postal system for RedM servers using the **RSG Core** framework. It brings a true Western vibe to player communication with custom UI, sound effects, and NPC clerk interactions.
@@ -27,10 +27,9 @@ An advanced, fully immersive Telegram and Postal system for RedM servers using t
 2. **Extract** the folder and rename it to `donnas_telegram`.
 3. **Database:** Run the provided `install.sql` file in your database.
 4. **Server.cfg:** Add the following line to your `server.cfg`:
-   ```text
    ensure donnas_telegram
 
-```
+
 
 5. **Sounds (Optional but highly recommended):** Place the `.mp3` files (page flip, stamp, coins, etc.) into the `html/sounds/` folder to enable the full audio experience.
 
@@ -47,11 +46,9 @@ This project is licensed under the **GNU GPLv3 License**.
 
 ### 📸 Preview
 
-<img width="546" height="750" alt="image" src="[https://github.com/user-attachments/assets/9b384d54-9b73-4d63-8194-e37de6446e76](https://github.com/user-attachments/assets/9b384d54-9b73-4d63-8194-e37de6446e76)" />
-<img width="1101" height="749" alt="image" src="[https://github.com/user-attachments/assets/efba8f59-1643-4ec9-8ce3-7d3eb79d85b6](https://github.com/user-attachments/assets/efba8f59-1643-4ec9-8ce3-7d3eb79d85b6)" />
-<img width="1086" height="744" alt="image" src="[https://github.com/user-attachments/assets/b183f932-a490-4d4d-9a3a-7bced7db2e75](https://github.com/user-attachments/assets/b183f932-a490-4d4d-9a3a-7bced7db2e75)" />
-<img width="554" height="756" alt="image" src="[https://github.com/user-attachments/assets/d6c95c76-728e-4ce3-aa11-c3ed029dfa0b](https://github.com/user-attachments/assets/d6c95c76-728e-4ce3-aa11-c3ed029dfa0b)" />
-<img width="528" height="748" alt="image" src="[https://github.com/user-attachments/assets/bf70605e-7811-4c18-9262-044c958fbae7](https://github.com/user-attachments/assets/bf70605e-7811-4c18-9262-044c958fbae7)" />
-<img width="1098" height="741" alt="image" src="[https://github.com/user-attachments/assets/c428e1c3-a8d1-4964-96ee-c6669324c812](https://github.com/user-attachments/assets/c428e1c3-a8d1-4964-96ee-c6669324c812)" />
+<img width="1098" height="757" alt="image" src="https://github.com/user-attachments/assets/b6f69c8e-1cd7-43e9-956a-62b60b1040da" />
 
-```
+
+<img width="1115" height="757" alt="image" src="https://github.com/user-attachments/assets/87e7b0e0-e269-4258-8009-cf1bd39eb587" />
+<img width="1099" height="741" alt="image" src="https://github.com/user-attachments/assets/1368fe76-e7a9-4323-9f34-695d7d8b9e89" />
+<img width="546" height="742" alt="image" src="https://github.com/user-attachments/assets/0c9b89ce-5725-4f1b-925a-70bd5b1fd70b" />
