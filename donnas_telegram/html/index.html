@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaDonna Telegram Book</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app" style="display: none;">
+        <div class="scene">
+            <div class="book" id="book">
+                <div class="sheet" id="sheet1">
+                    <div class="face front cover">
+                        <div class="cover-design">
+                            <h1 data-loc="ui_ledger_title">Telegraph<br>Ledger</h1>
+                            <div class="cover-stamp">1899</div>
+                        </div>
+                        <div class="flip-zone full-zone" onclick="app.flipNext()"></div>
+                    </div>
+                    
+                    <div class="face back page">
+                        <div class="page-content">
+                            <div class="header">
+                                <h2 data-loc="ui_ledger_title">Telegraph Ledger</h2>
+                                <div class="nav-tabs">
+                                    <button onclick="app.setTab('inbox')" id="tab-inbox" class="active-tab"><i class="fas fa-inbox"></i></button>
+                                    <button onclick="app.setTab('outbox')" id="tab-outbox"><i class="fas fa-paper-plane"></i></button>
+                                    <button onclick="app.setTab('contacts')" id="tab-contacts"><i class="fas fa-address-book"></i></button>
+                                </div>
+                            </div>
+                            <div class="list-container" id="list-container"></div>
+                        </div>
+                        <div class="flip-zone edge-left" onclick="app.flipPrev()"><i class="fas fa-chevron-left"></i></div>
+                    </div>
+                </div>
+
+                <div class="sheet" id="sheet2">
+                    <div class="face front page">
+                        <div id="stamp-overlay" class="stamp-overlay">DISPATCHED</div>
+                        
+                        <div class="top-controls">
+                            <button class="compose-btn" onclick="app.setCompose()"><i class="fas fa-pen-nib"></i> <span data-loc="ui_compose">Compose</span></button>
+                            <button class="close-btn" onclick="app.closeUI()"><i class="fas fa-times"></i></button>
+                        </div>
+
+                        <div class="page-content right-content">
+                            <div id="read-view" style="display: none;">
+                                <div class="telegram-paper">
+                                    <div class="telegram-header">
+                                        <h3 id="read-sender" class="handwriting"></h3>
+                                        <p id="read-status" class="typewriter"></p>
+                                    </div>
+                                    <div class="telegram-body handwriting" id="read-message"></div>
+                                    <div class="telegram-footer">
+                                        <button id="delete-btn" class="action-btn"><i class="fas fa-trash"></i> <span data-loc="ui_burn_btn">Burn</span></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="compose-view" style="display: none;">
+                                <h3 class="compose-title" data-loc="ui_new_dispatch">New Dispatch</h3>
+                                <div style="margin-bottom: 10px; font-weight:bold; color:#6b1d1d;" data-loc="ui_fee">Fee: $1.00</div>
+                                <form id="compose-form">
+                                    <div class="input-group">
+                                        <label data-loc="ui_recipient">Recipient ID:</label>
+                                        <input type="text" id="compose-to" required>
+                                    </div>
+                                    <div class="input-group text-group">
+                                        <label data-loc="ui_message">Message:</label>
+                                        <textarea id="compose-message" rows="9" required></textarea>
+                                    </div>
+                                    <button type="submit" class="send-btn"><i class="fas fa-stamp"></i> <span data-loc="ui_send_btn">Send Telegraph</span></button>
+                                </form>
+                            </div>
+
+                            <div id="contacts-view" style="display: none;">
+                                <h3 class="compose-title" data-loc="ui_add_contact_title">Add Contact</h3>
+                                <form id="add-contact-form" style="margin-bottom: 20px;">
+                                    <div class="input-group">
+                                        <label data-loc="ui_contact_name">Name:</label>
+                                        <input type="text" id="contact-name" required>
+                                    </div>
+                                    <div class="input-group">
+                                        <label data-loc="ui_contact_id">Citizen ID:</label>
+                                        <input type="text" id="contact-id" required>
+                                    </div>
+                                    <button type="submit" class="send-btn"><i class="fas fa-save"></i> <span data-loc="ui_save_btn">Save</span></button>
+                                </form>
+                            </div>
+
+                            <div id="empty-view">
+                                <div class="empty-state handwriting">
+                                    <i class="fas fa-feather-alt"></i><br>
+                                    <span data-loc="ui_empty_state">Select a dispatch...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-zone edge-right" onclick="app.flipNext()"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    
+                    <div class="face back cover">
+                        <div class="cover-design">
+                            <h2 style="margin-top: 300px; font-size: 20px; opacity: 0.5;">LaDonna Systems</h2>
+                        </div>
+                        <div class="flip-zone full-zone" onclick="app.flipPrev()"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
